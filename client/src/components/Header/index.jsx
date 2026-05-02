@@ -4,6 +4,7 @@ import SearchBar from "./SearchBar";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenuIcon from "./MobileMenuIcon";
 import MobileMenu from "./Mobile/MobileMenu";
+import MegaMenu from "./MegaMenu";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +20,7 @@ const Header = () => {
       </div>
 
       <div>{isOpen && <MobileMenu />}</div>
+      <MegaMenu />
     </header>
   );
 };

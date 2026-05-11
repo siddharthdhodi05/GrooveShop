@@ -2,11 +2,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import HomeScreen from "@screens/HomeScreen";
 import Layout from "@components/Layout";
+import ErrorScreen from "@screens/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
+    errorElement: <ErrorScreen />,
     children: [
       {
         index: true,
